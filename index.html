@@ -59,34 +59,34 @@
           Paso 4. Substituir la operación: {{r1}}x = <span ng-bind="(rr*1)+(r2*1)"></span>. <br>
           Paso 5. Dividir el resultado sobre la x: {{(((rr*1)+(r2*1))/r1).toFixed(2)}}.
         </p>
-        <p>En la ecuación {{r1}}x + {{r2}} = {{rr}}, con base en una resta; x tiene un valor de {{(((rr*1)+(r2*1))/r1).toFixed(2)}}.</p>
+        <p>En la ecuación {{r1}}x - {{r2}} = {{rr}}, con base en una resta; x tiene un valor de {{(((rr*1)+(r2*1))/r1).toFixed(2)}}.</p>
         <hr>
         <h3>Ecuación Gráfica a base de Suma</h3>
         y = <input placeholder="No. 01" ng-model="g1">x + <input placeholder="No. 02" ng-model="g2">
-        <table border="7" style="width:75px">
+        <table border="7" style="width:75px;margin-top: 10px;">
           <tr>
             <td>x</td>
             <td>y</td>  	
           </tr>
           <tr>
             <td>-2</td>
-            <td>{{(g1*-2)+g2}}</td>		
+            <td>{{(g1*-2)+(g2*1)}}</td>		
           </tr>
           <tr>
             <td>-1</td>
-              <td>{{(g1*-1)+g2}}</td>		
+              <td>{{(g1*-1)+(g2*1)}}</td>		
           </tr>
           <tr>
             <td>0</td>
-            <td>{{(g1*0)+g2}}</td>
+            <td>{{(g1*0)+(g2*1)}}</td>
           </tr>
           <tr>
             <td>1</td>
-            <td>{{(g1*1)+g2}}</td>
+            <td>{{(g1*1)+(g2*1)}}</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>{{(g1*2)+g2}}</td>
+            <td>{{(g1*2)+(g2*1)}}</td>
           </tr>
         </table>
       </p>
