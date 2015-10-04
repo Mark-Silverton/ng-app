@@ -13,6 +13,9 @@
       p {
         text-align: justify;
       }
+      input {
+        width: 20px;
+      }
     </style>
   </head>
   <body>
@@ -38,6 +41,13 @@
       <p>
         <input type="text" placeholder="Ingresa un número" ng-model="n1">x + <input type="text" placeholder="Ingresa el segundo número" ng-model="n2"> 
         = <input type="text" placeholder="Ingresa el resultado" ng-model="r">
+        <p>
+          Paso 1. Tomar la variable {{n1}}x. <br>
+          Paso 2. Restar {{r}} menos {{n2}} <br>
+          Paso 3. Unir los dos pasos anteriores así: {{n1}}x = {{r}} - {{n2}} <br>
+          Paso 4. Substituir la operación: {{n1}}x = <span ng-bind="r-n2" ng-model="p"></span> <br>
+          Paso 5. Dividir los dos resultados: {{p}} / {{n1}} = {{p/n1}}
+        </p>
         <p>En la ecuación {{n1}}x + {{n2}} = {{r}}; X tiene un valor de {{(r-n2)/n1}}.</p>
       </p>
       <footer class="site-footer">
