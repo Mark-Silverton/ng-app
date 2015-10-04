@@ -39,16 +39,27 @@
         AngularJS App sigue en desarrollo. La única operación disponible por el momento es la ecuación de primer grado:
       </p>
       <p>
-        <input type="text" placeholder="No. 01" ng-model="n1">x + <input type="text" placeholder="No. 02" ng-model="n2"> 
-        = <input type="text" placeholder="Resultado" ng-model="r">
+        <h2>Ecuación de 1er Grado a base de Suma</h2>
+        <input placeholder="No. 01" ng-model="s1">x + <input placeholder="No. 02" ng-model="s2"> = <input placeholder="R." ng-model="rs">
         <p>
-          Paso 1. Tomar la variable {{n1}}x. <br>
-          Paso 2. Restar {{r}} menos {{n2}} <br>
-          Paso 3. Unir los dos pasos anteriores así: {{n1}}x = {{r}} - {{n2}} <br>
-          Paso 4. Substituir la operación: {{n1}}x = <span ng-bind="r-n2"></span> <br>
-          Paso 5. Dividir el resultado sobre la x: {{(r-n2)/n1}}
+          Paso 1. Tomar la variable {{s1}}x. <br>
+          Paso 2. Restar {{rs}} menos {{s2}} <br>
+          Paso 3. Unir los dos pasos anteriores: {{s1}}x = {{rs}} - {{s2}} <br>
+          Paso 4. Substituir la operación: {{s1}}x = <span ng-bind="rs-s2"></span> <br>
+          Paso 5. Dividir el resultado sobre la x: {{(rs-s2)/s1}}
         </p>
-        <p>En la ecuación {{n1}}x + {{n2}} = {{r}}; X tiene un valor de {{(r-n2)/n1}}.</p>
+        <p>En la ecuación {{s1}}x + {{s2}} = {{rs}}, con base en una suma; x tiene un valor de {{(rs-s2)/s1}}.</p>
+        <hr>
+        <h2>Ecuación de 1er Grado a base de Resta</h2>
+        <input placeholder="No. 01" ng-model="r1">x - <input placeholder="No. 02" ng-model="r2"> = <input placeholder="R." ng-model="rr">
+        <p>
+          Paso 1. Tomar la variable {{r1}}x. <br>
+          Paso 2. Sumar {{rr}} más {{r2}} <br>
+          Paso 3. Unir los dos pasos anteriores: {{r1}}x = {{rr}} + {{r2}} <br>
+          Paso 4. Substituir la operación: {{r1}}x = <span ng-bind="rr+r2"></span> <br>
+          Paso 5. Dividir el resultado sobre la x: {{(rr+r2)/r1}}
+        </p>
+        <p>En la ecuación {{r1}}x + {{r2}} = {{rr}}, con base en una resta; x tiene un valor de {{(rr+r2)/r1}}</p>
       </p>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Pablo-Ivan/ng-app">AngularJS App</a> es mantenida por <a href="https://github.com/Pablo-Ivan">Pablo-Ivan</a>.</span>
