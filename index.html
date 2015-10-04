@@ -46,9 +46,9 @@
           Paso 2. Restar {{rs}} menos {{s2}}: {{rs-s2}}. <br>
           Paso 3. Unir los dos pasos anteriores: {{s1}}x = {{rs}} - {{s2}}. <br>
           Paso 4. Substituir la operación: {{s1}}x = <span ng-bind="rs-s2"></span>. <br>
-          Paso 5. Dividir el resultado sobre la x: {{((rs-s2)/s1).toFixed(3)}}.
+          Paso 5. Dividir el resultado sobre la x: {{((rs-s2)/s1).toFixed(2)}}.
         </p>
-        <p>En la ecuación {{s1}}x + {{s2}} = {{rs}}, con base en una suma; x tiene un valor de {{((rs-s2)/s1).toFixed(3)}}.</p>
+        <p>En la ecuación {{s1}}x + {{s2}} = {{rs}}, con base en una suma; x tiene un valor de {{((rs-s2)/s1).toFixed(2)}}.</p>
         <hr>
         <h3>Ecuación de 1er Grado a base de Resta</h3>
         <input placeholder="No. 01" ng-model="r1">x - <input placeholder="No. 02" ng-model="r2"> = <input placeholder="R." ng-model="rr">
@@ -57,9 +57,9 @@
           Paso 2. Sumar {{rr}} más {{r2}}: {{(rr*1)+(r2*1)}}. <br>
           Paso 3. Unir los dos pasos anteriores: {{r1}}x = {{rr}} + {{r2}}. <br>
           Paso 4. Substituir la operación: {{r1}}x = <span ng-bind="(rr*1)+(r2*1)"></span>. <br>
-          Paso 5. Dividir el resultado sobre la x: {{(((rr*1)+(r2*1))/r1).toFixed(3)}}.
+          Paso 5. Dividir el resultado sobre la x: {{(((rr*1)+(r2*1))/r1).toFixed(2)}}.
         </p>
-        <p>En la ecuación {{r1}}x + {{r2}} = {{rr}}, con base en una resta; x tiene un valor de {{(((rr*1)+(r2*1))/r1).toFixed(3)}}.</p>
+        <p>En la ecuación {{r1}}x + {{r2}} = {{rr}}, con base en una resta; x tiene un valor de {{(((rr*1)+(r2*1))/r1).toFixed(2)}}.</p>
       </p>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Pablo-Ivan/ng-app">AngularJS App</a> es mantenida por <a href="https://github.com/Pablo-Ivan">Pablo-Ivan</a>.</span>
