@@ -46,7 +46,7 @@
           Paso 2. Restar {{rs}} menos {{s2}}: {{rs-s2}}. <br>
           Paso 3. Unir los dos pasos anteriores: {{s1}}x = {{rs}} - {{s2}}. <br>
           Paso 4. Substituir la operación: {{s1}}x = <span ng-bind="rs-s2"></span>. <br>
-          Paso 5. Dividir el resultado sobre la x: {{(rs-s2)/s1}}.
+          Paso 5. Dividir el resultado sobre la x: {{((rs-s2)/s1).toFixed(4)}}.
         </p>
         <p>En la ecuación {{s1}}x + {{s2}} = {{rs}}, con base en una suma; x tiene un valor de {{(rs-s2)/s1}}.</p>
         <hr>
