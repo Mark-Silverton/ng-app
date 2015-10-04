@@ -14,7 +14,7 @@
         text-align: justify;
       }
       input {
-        width: 55px;
+        width: 60px;
       }
     </style>
   </head>
@@ -45,8 +45,8 @@
           Paso 1. Tomar la variable {{n1}}x. <br>
           Paso 2. Restar {{r}} menos {{n2}} <br>
           Paso 3. Unir los dos pasos anteriores así: {{n1}}x = {{r}} - {{n2}} <br>
-          Paso 4. Substituir la operación: {{n1}}x = <span ng-bind="r-n2" ng-model="p"></span> <br>
-          Paso 5. Dividir los dos resultados: {{p}} / {{n1}} = {{p/n1}}
+          Paso 4. Substituir la operación: {{n1}}x = <span ng-bind="r-n2"></span> <br>
+          Paso 5. Dividir el resultado sobre la x: {{(r-n2)/n1}}
         </p>
         <p>En la ecuación {{n1}}x + {{n2}} = {{r}}; X tiene un valor de {{(r-n2)/n1}}.</p>
       </p>
