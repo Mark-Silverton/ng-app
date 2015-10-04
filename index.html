@@ -36,6 +36,7 @@
         <h3>Ecuación de 1er Grado a base de Suma</h3>
         <input maxlength="4" placeholder="No. 01" ng-model="s1">x + <input maxlength="4" placeholder="No. 02" ng-model="s2"> = <input maxlength="5" placeholder="R." ng-model="rs">
         <p>
+          Sólo para confirmar, tu ecuación es: {{s1}}x + {{s2}} = {{rs}} <br>
           Paso 1. Tomar la variable {{s1}}x. <br>
           Paso 2. Restar {{rs}} menos {{s2}}: {{rs-s2}}. <br>
           Paso 3. Unir los dos pasos anteriores: {{s1}}x = {{rs}} - {{s2}}. <br>
@@ -47,6 +48,7 @@
         <h3>Ecuación de 1er Grado a base de Resta</h3>
         <input maxlength="4" placeholder="No. 01" ng-model="r1">x - <input maxlength="4" placeholder="No. 02" ng-model="r2"> = <input maxlength="5" placeholder="R." ng-model="rr">
         <p>
+          Sólo para confirmar, tu ecuación es: {{r1}}x - {{r2}} = {{rr}} <br>
           Paso 1. Tomar la variable {{r1}}x. <br>
           Paso 2. Sumar {{rr}} más {{r2}}: {{(rr*1)+(r2*1)}}. <br>
           Paso 3. Unir los dos pasos anteriores: {{r1}}x = {{rr}} + {{r2}}. <br>
@@ -57,6 +59,7 @@
         <hr>
         <h3>Ecuación Gráfica a base de Suma</h3>
         y = <input maxlength="4" placeholder="No. 01" ng-model="g1">x + <input maxlength="4" placeholder="No. 02" ng-model="g2">
+        <p>Tu ecuación gráfica es: y = {{g1}}x + {{g2}}.</p>
         <table border="0" style="width:134px;margin-top: 10px;">
           <tr>
             <td>x</td>
