@@ -49,7 +49,7 @@
           Paso 1. Tomar la variable {{s1}}x. <br>
           Paso 2. Restar {{rs}} menos {{s2}}. <br>
           Paso 3. Unir los dos pasos anteriores: {{s1}}x = {{rs}} - {{s2}}. <br>
-          Paso 4. Substituir la operación: {{s1}}x = <span ng-bind="rs-s2"></span>. <br>
+          Paso 4. Substituir la operación: {{s1}}x = <span data-ng-bind="rs-s2"></span>. <br>
           Paso 5. Dividir el resultado sobre la x: {{((rs-s2)/s1).toFixed(2)}}.
         </p>
         <p>En la ecuación {{s1}}x + {{s2}} = {{rs}}, con base en una suma; x tiene un valor de {{((rs-s2)/s1).toFixed(2)}}.</p>
@@ -61,7 +61,7 @@
           Paso 1. Tomar la variable {{r1}}x. <br>
           Paso 2. Sumar {{rr}} más {{r2}}. <br>
           Paso 3. Unir los dos pasos anteriores: {{r1}}x = {{rr}} + {{r2}}. <br>
-          Paso 4. Substituir la operación: {{r1}}x = <span ng-bind="(rr*1)+(r2*1)"></span>. <br>
+          Paso 4. Substituir la operación: {{r1}}x = <span data-ng-bind="(rr*1)+(r2*1)"></span>. <br>
           Paso 5. Dividir el resultado sobre la x: {{(((rr*1)+(r2*1))/r1).toFixed(2)}}.
         </p>
         <p>En la ecuación {{r1}}x - {{r2}} = {{rr}}, con base en una resta; x tiene un valor de {{(((rr*1)+(r2*1))/r1).toFixed(2)}}.</p>
