@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--ng-app. Atributo para iniciar AngularJS-->
-<html lang="es" ng-app>
+<html lang="es" data-ng-app>
   <head>
     <meta charset="UTF-8">
     <title>AngularJS App</title>
@@ -42,7 +42,7 @@
       </p>
       <p>
         <h3>Ecuación de 1er Grado a base de Suma</h3>
-        <input maxlength="4" placeholder="No. 01" ng-model="s1">x + <input maxlength="4" placeholder="No. 02" ng-model="s2"> = <input maxlength="5" placeholder="R." ng-model="rs">
+        <input maxlength="4" placeholder="No. 01" data-ng-model="s1">x + <input maxlength="4" placeholder="No. 02" data-ng-model="s2"> = <input maxlength="5" placeholder="R." data-ng-model="rs">
         <p>
           Sólo para confirmar, tu ecuación es: {{s1}}x + {{s2}} = {{rs}} <br>
           Paso 1. Tomar la variable {{s1}}x. <br>
@@ -54,7 +54,7 @@
         <p>En la ecuación {{s1}}x + {{s2}} = {{rs}}, con base en una suma; x tiene un valor de {{((rs-s2)/s1).toFixed(2)}}.</p>
         <hr>
         <h3>Ecuación de 1er Grado a base de Resta</h3>
-        <input maxlength="4" placeholder="No. 01" ng-model="r1">x - <input maxlength="4" placeholder="No. 02" ng-model="r2"> = <input maxlength="5" placeholder="R." ng-model="rr">
+        <input maxlength="4" placeholder="No. 01" data-ng-model="r1">x - <input maxlength="4" placeholder="No. 02" data-ng-model="r2"> = <input maxlength="5" placeholder="R." data-ng-model="rr">
         <p>
           Sólo para confirmar, tu ecuación es: {{r1}}x - {{r2}} = {{rr}} <br>
           Paso 1. Tomar la variable {{r1}}x. <br>
@@ -66,7 +66,7 @@
         <p>En la ecuación {{r1}}x - {{r2}} = {{rr}}, con base en una resta; x tiene un valor de {{(((rr*1)+(r2*1))/r1).toFixed(2)}}.</p>
         <hr>
         <h3>Ecuación Gráfica a base de Suma</h3>
-        y = <input maxlength="4" placeholder="No. 01" ng-model="g1">x + <input maxlength="4" placeholder="No. 02" ng-model="g2">
+        y = <input maxlength="4" placeholder="No. 01" data-ng-model="g1">x + <input maxlength="4" placeholder="No. 02" data-ng-model="g2">
         <p>Tu ecuación gráfica es: y = {{g1}}x + {{g2}}.</p>
         <table style="width:134px;margin-top: 10px;border:0;">
           <tr>
